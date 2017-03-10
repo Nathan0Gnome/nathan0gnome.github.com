@@ -1,11 +1,7 @@
 @@ -1,37 +0,0 @@
 ## Hello Wooooorld！！！
-You can use the [editor on GitHub](https://github.com/Nathan0Gnome/nathan0gnome.github.com/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ### Markdown
-
+简陋的页面，拙劣的文字，渣渣的技术，也许是我人生中最郁闷的时刻，希望这个没啥人会看的博客能成为我的寄托。
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
