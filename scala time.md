@@ -8,31 +8,31 @@
 ##### １.转换为时间戳处理
 
 自己编写函数将string字段转化为时间戳;注意写好时间的格式
-```
-import Java.sql.Timestamp
-import java.text.SimpleDateFormat
-import java.util.Date
- /*
- * change date string to timestamp value
- */
- def getTimestamp(x:String) :java.sql.Timestamp = {
- //"20151021235349"
-   val format = new SimpleDateFormat("yyyyMMddHHmmss")
-   var ts = new Timestamp(System.currentTimeMillis());
-   try {
-     if (x == "")
-      return null
-        else {
-          val d = format.parse(x);
-          val t = new Timestamp(d.getTime());
-          return t
+
+    import Java.sql.Timestamp
+    import java.text.SimpleDateFormat
+    import java.util.Date
+     /*
+     * change date string to timestamp value
+     */
+     def getTimestamp(x:String) :java.sql.Timestamp = {
+     //"20151021235349"
+       val format = new SimpleDateFormat("yyyyMMddHHmmss")
+       var ts = new Timestamp(System.currentTimeMillis());
+       try {
+         if (x == "")
+            return null
+         else {
+            val d = format.parse(x);
+            val t = new Timestamp(d.getTime());
+            return t
             }
         } catch {
           case e: Exception => println("cdr parse timestamp wrong")
-         }
+        }
         return null
-    }
-    ```
+     }
+    
 ##### 2.scala处理时间戳
 
 我们可以调用java中处理时间戳的工具来完成对时间的处理：
